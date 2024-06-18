@@ -55,7 +55,7 @@ export default function Form({ post, onSubmit, submitText }) {
           type="datetime-local"
           name="published_at"
           id="published_at"
-          value={data.published_at}
+          value={data.published_at.slice(0,16)}
           className="block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full"
           onChange={(e) => setData('published_at', e.target.value)}
         />
